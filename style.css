@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/*body*/
+body {
+ font-family: 'Libre Baskerville', verdana, Futura;
+ margin:0;
+ padding:0;
+}
+
+/*header*/
+header {
+    display: inline;
+}
+
+.jumbotroon {
+	font-size: 20px;
+    padding: 60px;
+    background-color: #eabf9f;
+    text-align: center;
+    color: white;
+}
+
+/*menu navigasi*/
+#menu {
+ background-color:#c19065;
+ padding: 3px;
+ height:55px;
+ top: 0;
+ position: sticky;
+}
+
+.navigasi {
+ background-color: #c19065;
+ list-style-type:none;
+ font-size: 18px;
+ font-weight: 400;
+ line-height:30px;
+ margin:0;
+ padding:0;
+}
+
+.navigasi a {
+ background-color:#c19065;
+ color:white;
+ text-decoration:none;
+ display:block;
+ padding:10px 20px;
+}
+
+.navigasi a:hover {
+ color:#85603f;
+ background-color:#eabf9f;
+ font-weight: bold;
+}
+
+.navigasi ul {
+ list-style-type:none;
+ display:none;
+ margin:0;
+ padding:0;
+ list-style-position:outside;
+ position:absolute;
+}
+
+.navigasi li {
+ float:left;
+ position:relative;
+}
+
+.navigasi li ul a{
+ height:auto;
+ float:left;
+ width:10em;
+}
+
+.navigasi li:hover ul{
+ display:block;
+}
+
+/*main*/
+main {
+    padding: 20px;
+    overflow: auto;
+ }
+
+#content {
+ width: 75%;
+ float: left;
+}
+
+h2,h3 {
+    color: #85603f;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+/*footer*/
+footer {
+	padding: 20px;
+    color: #85603f;
+    background-color: #eabf9f;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*aside profile*/
+ aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    font-size: 15px;
+   color: #85603f;
+ }
+
+ @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+
+ * {
+    box-sizing: border-box;
+ }
+
+ .profile header {
+    text-align: center;
+ }
+ .profile_card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: #fde8cd;
+ }
+
+ .profile_img {
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    padding: 10px;
+    border-radius: 100px;
+ }
+
+ .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+ }
+

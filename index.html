@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofolio</title>
+</head>
+<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<!-- js -->
+	<script src="welcome.js">
+</script>
+
+	<!-- header -->
+<header>
+	<div class="jumbotroon">
+		<h1> Portofolio </h1>
+        <p> ------------------------------ </p>
+		<p> Bachelor of Computer Science </p>
+	</div>
+</header>
+
+<!-- navigasi -->
+<div id="menu">
+	<ul class="navigasi">
+ 			<li><a href="#Project">Project</a></li>
+ 			<li><a href="#education">Education</a></li>
+ 			<li><a href="#contact">Contact</a>
+</div>
+
+<!-- main -->
+<main>
+		<div id="content">
+  <!-- about -->
+              <article class="card">
+                <h2 id="Project">Project 1: Crowd Human Detection </h2>
+                <img src="image/foto3.jpg" width="400" height="300" style="display: block; margin: auto;" />
+            <br>
+            <h3> Overview </h3>
+            <p> My final project thesis was about made Internet of Things system. I made a tool for detecting crowd levels, this tool is used to detect the presence of crowd levels around.
+            I use Raspberry Pi as a Microprocessor to run commands, OpenCV as a media for connects Tensorflow and Machine Learning. To get a human object using the camera as a tool to monitor the surrounding area, if there are humans crowding, the camera will detect and send notifications in the form of images via Telegram connected to the internet network. </p>
+            <br>
+                <img src="image/foto4.png" width="350" height="200" style="display: block; margin: auto;"/>
+                <h3> Procedure </h3>
+                <p> Input:  
+                <p> <li> The camera will monitor the area around the room. </li> </p>
+                    <li> The camera as a detection tool captures the image of face objects. </li></p>
+                <p> Process:
+                <p> <li> If there is crowd detection, the tool will notify the security. </li></p>
+                    <li> Objects caught on camera will be sent directly to security via the Telegram application. </li>
+                <p> Output:
+                <p> <li> Notification to security if there is a crowd area. </p> </li>
+                    <li> Security will reprimand if they do not follow the health protocol rules. </li>
+                </p>
+                <h3> Software </h3>
+                <img src ="image/foto8.jpg" width="100" height="100">
+                <img src="image/foto9.jpg" width="130" height="130">
+                <img src="image/foto10.jpg" width="100" height="90">
+                <img src="image/foto11.jpg" width="130" height="130">
+                <img src="image/foto12.jpg" width="100" height="100">
+    </article>
+
+
+            <article class="card">
+                <h2 id="Project">Project 2: Mobile Speech To Sign Language Translator (Kampus Merdeka) </h2>
+                <img src="image/foto5.jpg" width="500" height="250" style="display: block; margin: auto;" /> <br>
+                <img src="image/foto6.jpg" width="250" height="250" style="display: block; margin: auto;" />
+            <br>
+            <h3> Overview </h3>
+            <p> We wanted to make a mobile application for people with hearing impairments in public areas. From the journal “Kendala Umum yang Dihadapi Penyandang Disabilities dalam Mengakses Layanan Publik” by Didi Tarsidi, people who suffer hearing loss tend to have difficulties in hearing public announcements. We want to make an app that can translate public announcements into something more understandable by people with hearing impairment. So we trained a machine learning algorithm to distinguish between announcement voice and environment noise. After being able to distinguish them, our mobile application can then record the announcement and save it to Google Cloud Storage, calling the flask api to de-noise the audio, and then calling the Google Speech To Text api to get the transcript of the announcement. Finally the transcript result is returned by the api into the mobile application. We were hoping to build an app that can show sign language images, but for prototype purposes we ended up with text.</p>
+           
+            <h3> Cont.</h3>
+            <a href="http://www.openslr.org/12/ https://github.com/karolpiczak/ESC-50">Dataset Link</a> <br>
+            <a href="https://drive.google.com/file/d/16-AnvsOCHuXvONnC_YRtHuQ4JCBSDxjD/view?usp=sharing"> Deployed Link </a> <br>
+            <a href="https://github.com/StephenLeonardo/ezu-capstone">Github Repository</a> <br>
+            <a href="https://ejournal.upi.edu/index.php/jassi/article/download/3991/2862https://openreview.net/forum?id=SkeRTsAcYm">Academic Paper link</a>      
+    </article>
+
+            <article class="card">
+                <h2 id="Project">Project 3: Running Text Arduino Uno  <p></p>
+                <img src="image/foto7.png" width="500" height="300" style="display: block; margin: auto;" /> <br>
+            <br>
+            <h3> Overview </h3>
+            <p> “Running Text that I made using the Arduino Uno microcontroller and LED Matrix as the output of the program that has been run on the Arduino IDE”</p>
+            <h3> Procedure: </h3> 
+            <li> Connect Arduino to Led Matrix using Female to Male jumper cable </li>
+            <li> Connect VCC module     >>   Pin 5V </li>
+            <li> Connect GND module    >>   GND </li>
+            <li> Connect DIND module   >>   Pin 11  </li>
+            <li> Connect CS module     >>   Pin 10  </li>
+            <li> Connect CLK module    >>   Pin 13</li>
+
+
+</article>
+		<!-- education -->
+                <article class="card">
+                        <h2 id="education">Education </h2>      
+                        <p> 2016 | SMKN 5 Kab. Tangerang - Teknik Komputer & Jaringan </p>
+                        <p> 2022 | Universitas Raharja - Sistem Komputer </p>
+ </article>
+
+<!-- contact -->
+                  <article class="card">
+                        <h2 id="contact">Contact</h2>
+                        <section>
+                        <p> ✉ mayangsept@gmail.com </p>
+                    </section>
+                </article>
+            </div>
+
+<!-- aside profile -->
+            <aside class="profile">
+                <article class="profile_card">
+                         <figure>
+                            <img src="image/1.jpg" class="profile_img" alt="profile">
+                                    <h3>Mayang Septiawati</h3>
+                            <figcaption> I'm a bachelor degree of Computer Science. I have some work experiences, organization, internship, and project. While I was in college, I also participated in the Independent Study program held by the Kampus Merdeka. </figcaption>
+                          </figure>
+                     </header>
+                </article>
+            </aside>
+</main>
+
+<!-- footer -->
+<footer>
+	Mayang S &copy 2022
+		</footer>
+</body>
+</html>
